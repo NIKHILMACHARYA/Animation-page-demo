@@ -1,0 +1,46 @@
+
+<!DOCTYPE html>
+<html lang="en" data-bs-theme="dark">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Hello World App</title>
+    <!-- Bootstrap CSS -->
+    <link href="https://cdn.replit.com/agent/bootstrap-agent-dark-theme.min.css" rel="stylesheet">
+    <!-- Custom CSS -->
+    <link href="{{ url_for('static', filename='css/style.css') }}" rel="stylesheet">
+    <!-- Font Awesome -->
+    <link href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0/css/all.min.css" rel="stylesheet">
+</head>
+<body>
+    <div class="container min-vh-100 d-flex align-items-center justify-content-center">
+        <div class="text-center">
+            <div class="illustration-container mb-4">
+                <svg width="300" height="300" viewBox="0 0 400 400" class="desk-illustration">
+                    <!-- Simple desk illustration SVG -->
+                    <style>
+                        .primary-color { fill: #ff69b4; }
+                        .secondary-color { fill: #4a4a4a; }
+                    </style>
+                    <rect x="100" y="200" width="200" height="10" class="secondary-color"/>
+                    <rect x="120" y="210" width="160" height="80" class="secondary-color"/>
+                    <circle cx="200" cy="170" r="30" class="primary-color"/>
+                    <rect x="185" y="200" width="30" height="40" class="primary-color"/>
+                </svg>
+            </div>
+            <h1 class="welcome-text mb-4">Hello World!</h1>
+            <p class="lead text-muted">Welcome to our Hello World web application</p>
+            <div class="mt-4">
+                <button class="btn btn-secondary" onclick="animateText()">
+                    <i class="fas fa-redo"></i> Animate
+                </button>
+            </div>
+        </div>
+    </div>
+
+    <!-- Bootstrap JS -->
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/js/bootstrap.bundle.min.js"></script>
+    <!-- Custom JS -->
+    <script src="{{ url_for('static', filename='js/animation.js') }}"></script>
+</body>
+</html>
