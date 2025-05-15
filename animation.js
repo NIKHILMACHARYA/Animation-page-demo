@@ -1,5 +1,3 @@
- 
-
 function animateText() {
     let text = document.querySelector(".welcome-text");
     text.style.transition = "transform 0.5s ease-in-out, color 0.5s";
